@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarGo — Premium Car Rental & On-Demand Mobility</title>
+  <meta name="description" content="Experience effortless car rentals with CarGo. Browse our fleet of economy, luxury, electric, and SUV vehicles with instant keyless booking and transparent pricing.">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2'/%3E%3Ccircle cx='7' cy='17' r='2'/%3E%3Cpath d='M9 17h6'/%3E%3Ccircle cx='17' cy='17' r='2'/%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Production CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Modular Vanilla JavaScript -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. NAVIGATION BAR
+       ====================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="logo" aria-label="CarGo Home">
+        <div class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+            <circle cx="7" cy="17" r="2"></circle>
+            <path d="M9 17h6"></path>
+            <circle cx="17" cy="17" r="2"></circle>
+          </svg>
+        </div>
+        <span>Car</span>Go
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#cars" class="nav-link">Cars</a>
+        <a href="#calculator" class="nav-link">Calculator</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & CTA) -->
+      <div class="nav-actions">
+        <!-- Dark / Light Mode Button -->
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <!-- Injected via JavaScript -->
+        </button>
+
+        <!-- Book Now Button -->
+        <a href="#search-panel" class="btn btn-primary btn-sm nav-btn-desktop">
+          Book Now
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="hamburger" id="hamburgerBtn" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ====================================================================
+         2. HERO SECTION
+         ==================================================================== -->
+    <section class="hero" id="home">
+      <div class="hero-glow-bg"></div>
+      
+      <div class="container hero-grid">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="section-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            On-Demand Mobility
+          </div>
+
+          <h1 class="hero-title">
+            Drive Your <span class="text-gradient">Journey</span>
+          </h1>
+
+          <p class="hero-description">
+            Rent reliable, fully sanitized, and premium vehicles easily. From daily commuters to exotic supercars, enjoy seamless digital check-in with zero hidden fees.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#cars" class="btn btn-primary btn-lg">
+              Explore Cars
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#calculator" class="btn btn-secondary btn-lg">
+              Price Calculator
+            </a>
+          </div>
+
+          <!-- Trust / Statistics Indicators -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>500+</h3>
+              <p>Fleet Cars</p>
+            </div>
+            <div class="stat-item">
+              <h3>10K+</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Road Support</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Automotive Showcase Image -->
+        <div class="hero-image-wrapper">
+          <div class="hero-car-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=80" alt="Porsche 911 Performance Vehicle">
+            <div class="hero-floating-badge">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <div>
+                <div class="badge-text-primary">Porsche 911 Carrera</div>
+                <div class="badge-text-sub">Instant Digital Unlock Available</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. CAR SEARCH / BOOKING SEARCH BOX
+         ==================================================================== -->
+    <section class="search-panel-section" id="search-panel">
+      <div class="container">
+        <div class="search-box">
+          <form id="heroSearchForm" class="search-form-grid" novalidate>
+            
+            <!-- Pick-up Location -->
+            <div class="form-group">
+              <label for="searchPickupLoc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Pick-up Location
+              </label>
+              <select id="searchPickupLoc" class="form-control" required>
+                <option value="Airport International Terminal (LAX/JFK)">Airport Terminal Hub (LAX/JFK)</option>
+                <option value="Downtown Metro Center">Downtown Metro Center</option>
+                <option value="Financial & Luxury District">Financial & Luxury District</option>
+                <option value="Beachfront Marina Station">Beachfront Marina Station</option>
+              </select>
+            </div>
+
+            <!-- Drop-off Location -->
+            <div class="form-group">
+              <label for="searchDropoffLoc">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Drop-off Location
+              </label>
+              <select id="searchDropoffLoc" class="form-control">
+                <option value="Same as Pick-up">Same as Pick-up Hub</option>
+                <option value="Airport International Terminal (LAX/JFK)">Airport Terminal Hub</option>
+                <option value="Downtown Metro Center">Downtown Metro Center</option>
+                <option value="Financial & Luxury District">Financial & Luxury District</option>
+                <option value="Beachfront Marina Station">Beachfront Marina Station</option>
+              </select>
+            </div>
+
+            <!-- Pick-up Date -->
+            <div class="form-group">
+              <label for="searchPickupDate">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Pick-up Date
+              </label>
+              <input type="date" id="searchPickupDate" class="form-control" required>
+            </div>
+
+            <!-- Return Date -->
+            <div class="form-group">
+              <label for="searchReturnDate">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                Return Date
+              </label>
+              <input type="date" id="searchReturnDate" class="form-control" required>
+            </div>
+
+            <!-- Car Type -->
+            <div class="form-group">
+              <label for="searchCarType">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="1" y="3" width="15" height="13"></rect>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                  <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                  <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                </svg>
+                Vehicle Class
+              </label>
+              <select id="searchCarType" class="form-control">
+                <option value="All">All Vehicle Types</option>
+                <option value="Economy">Economy</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Luxury">Luxury</option>
+                <option value="Sports">Sports</option>
+                <option value="Electric">Electric</option>
+              </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="search-btn-wrapper">
+              <button type="submit" class="btn btn-primary" id="heroSearchBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Search
+              </button>
+            </div>
+
+          </form>
+
+          <!-- Feedback message -->
+          <div id="searchFeedback" class="search-feedback"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4 & 5. FEATURED CARS SECTION & FILTERING
+         ==================================================================== -->
+    <section class="section" id="cars">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-badge">Popular Cars</div>
+          <h2 class="section-title">Explore Our <span class="text-gradient">Featured Fleet</span></h2>
+          <p class="section-subtitle">
+            Every vehicle is thoroughly inspected, professionally detailed, and ready for your next adventure.
+          </p>
+        </div>
+
+        <!-- Filter Controls & Search -->
+        <div class="filter-wrapper">
+          <div class="category-filter">
+            <button type="button" class="filter-btn active" data-category="All">All</button>
+            <button type="button" class="filter-btn" data-category="Economy">Economy</button>
+            <button type="button" class="filter-btn" data-category="Sedan">Sedan</button>
+            <button type="button" class="filter-btn" data-category="SUV">SUV</button>
+            <button type="button" class="filter-btn" data-category="Luxury">Luxury</button>
+            <button type="button" class="filter-btn" data-category="Sports">Sports</button>
+            <button type="button" class="filter-btn" data-category="Electric">Electric</button>
+          </div>
+
+          <div class="search-input-box">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="carSearchInput" placeholder="Search by model or brand...">
+          </div>
+        </div>
+
+        <!-- Cars Grid (Injected via JavaScript) -->
+        <div class="cars-grid" id="carsGrid"></div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         7. RENTAL PRICE CALCULATOR
+         ==================================================================== -->
+    <section class="section section-alt" id="calculator">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-badge">Dynamic Estimator</div>
+          <h2 class="section-title">Rental Price <span class="text-gradient">Calculator</span></h2>
+          <p class="section-subtitle">
+            Calculate your exact estimated rental fee upfront with total transparency. No surprise desk fees.
+          </p>
+        </div>
+
+        <div class="calculator-card">
+          <div class="calculator-grid">
+            
+            <!-- Inputs Column -->
+            <div class="calculator-inputs">
+              <div class="form-group">
+                <label for="calcCarSelect">Select Vehicle</label>
+                <select id="calcCarSelect" class="form-control"></select>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="form-group">
+                  <label for="calcPickupDate">Pick-up Date</label>
+                  <input type="date" id="calcPickupDate" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="calcReturnDate">Return Date</label>
+                  <input type="date" id="calcReturnDate" class="form-control">
+                </div>
+              </div>
+
+              <div class="calc-addons-title">Select Optional Travel Add-ons:</div>
+              <div class="calc-addons-list">
+                <label class="addon-card">
+                  <input type="checkbox" id="calcInsurance" checked>
+                  <div class="addon-info">
+                    <span class="addon-name">Comprehensive Zero-Deductible Insurance</span>
+                    <span class="addon-price">+$20 / day</span>
+                  </div>
+                </label>
+
+                <label class="addon-card">
+                  <input type="checkbox" id="calcGps">
+                  <div class="addon-info">
+                    <span class="addon-name">Garmin Satellite GPS Navigation</span>
+                    <span class="addon-price">+$8 / day</span>
+                  </div>
+                </label>
+
+                <label class="addon-card">
+                  <input type="checkbox" id="calcChildSeat">
+                  <div class="addon-info">
+                    <span class="addon-name">ISOFIX Child Safety Seat</span>
+                    <span class="addon-price">+$10 / day</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Calculated Receipt Summary Column -->
+            <div class="calculator-summary">
+              <div>
+                <div class="summary-header">
+                  <h3>Price Breakdown</h3>
+                </div>
+
+                <div class="summary-car-preview">
+                  <img id="calcSummaryCarImage" src="" alt="Selected Car Preview">
+                  <div>
+                    <strong id="calcSummaryCarName" style="font-size: 0.9375rem; color: var(--text-main); display: block;"></strong>
+                    <span style="font-size: 0.75rem; color: var(--accent-emerald);">Guaranteed Available</span>
+                  </div>
+                </div>
+
+                <div class="summary-rows">
+                  <div class="summary-row">
+                    <span>Rental Duration:</span>
+                    <strong id="calcSummaryDays" style="color: var(--text-main);"></strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>Base Daily Fee:</span>
+                    <span id="calcSummaryBaseCost"></span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Selected Add-ons:</span>
+                    <span id="calcSummaryAddonsCost"></span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Taxes & Concession Fees (8%):</span>
+                    <span id="calcSummaryTaxes"></span>
+                  </div>
+                  <div class="summary-row total-row">
+                    <span>Estimated Total:</span>
+                    <span id="calcSummaryTotalCost"></span>
+                  </div>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-primary btn-block" id="calcProceedBtn" style="margin-top: 24px;">
+                Proceed to Booking
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         8. SERVICES SECTION ("Why Choose CarGo?")
+         ==================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-badge">Our Benefits</div>
+          <h2 class="section-title">Why Choose <span class="text-gradient">CarGo</span>?</h2>
+          <p class="section-subtitle">
+            We reimagined car rental from the ground up to give you total control, peace of mind, and modern convenience.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Easy Online Booking</h3>
+            <p>Reserve your car in under 60 seconds with instant digital confirmation and zero unnecessary paperwork.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h3>24/7 Customer Support</h3>
+            <p>Our dedicated roadside assistance and concierge teams are on call day and night whenever you need help.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3>Flexible Pickup & Drop-off</h3>
+            <p>Pick up at the airport terminal and return at the city center with seamless one-way rental support.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <h3>Fully Inspected Cars</h3>
+            <p>Every vehicle undergoes a meticulous 50-point safety and cleanliness inspection between rentals.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3>Affordable Pricing</h3>
+            <p>Transparent rates with all taxes and insurance tiers clearly itemized. Guaranteed zero surprise fees.</p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="m4.93 4.93 4.24 4.24"></path>
+                <path d="m14.83 9.17 4.24-4.24"></path>
+                <path d="m14.83 14.83 4.24 4.24"></path>
+                <path d="m9.17 14.83-4.24 4.24"></path>
+              </svg>
+            </div>
+            <h3>Comprehensive Insurance</h3>
+            <p>Choose from standard liability up to complete Zero-Deductible protection covering scratches, glass, and tires.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. HOW IT WORKS
+         ==================================================================== -->
+    <section class="section section-alt" id="how-it-works">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-badge">Simple Process</div>
+          <h2 class="section-title">How It <span class="text-gradient">Works</span></h2>
+          <p class="section-subtitle">
+            Four simple steps to get you on the road in premium comfort.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3>Choose Your Car</h3>
+            <p>Browse our extensive fleet of economy, luxury, and electric models to find the perfect fit.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3>Select Your Dates</h3>
+            <p>Choose your pick-up and drop-off stations and rental dates with flexible time slots.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3>Confirm Booking</h3>
+            <p>Enter your driver details, review your transparent invoice, and receive your digital voucher instantly.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+            </div>
+            <h3>Enjoy Your Ride</h3>
+            <p>Walk directly to your vehicle, unlock via your digital confirmation pass, and start driving.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         10. ABOUT CARGO
+         ==================================================================== -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        
+        <!-- Image & Badge Column -->
+        <div class="about-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80" alt="CarGo Fleet Experience" class="about-main-image">
+          <div class="about-stat-badge">
+            <h4>10+</h4>
+            <p>Years of Automotive Excellence</p>
+          </div>
+        </div>
+
+        <!-- Story & Mission Column -->
+        <div class="about-content">
+          <div class="section-badge">About CarGo</div>
+          <h2 class="section-title">Redefining Car Rental For The <span class="text-gradient">Modern World</span></h2>
+          
+          <p>
+            Founded with a clear mission to eradicate the frustrations of traditional airport rental counters, CarGo merges high-caliber automotive performance with intuitive technology.
+          </p>
+
+          <p>
+            Whether you need an efficient sedan for a city business meeting, an SUV for a family getaway, or an exotic sports coupe for an unforgettable weekend drive, our fleet is meticulously maintained to exceed your expectations.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>100% Digital Check-In</span>
+            </div>
+            <div class="highlight-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Free 24h Cancellation</span>
+            </div>
+            <div class="highlight-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Pristine Cleanliness Standard</span>
+            </div>
+            <div class="highlight-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>24/7 Concierge Support</span>
+            </div>
+          </div>
+
+          <!-- Animated Statistics Counters -->
+          <div class="about-stats-grid">
+            <div class="about-stat">
+              <h3 class="counter-number" data-target="500" data-suffix="+">0</h3>
+              <p>Vehicles</p>
+            </div>
+            <div class="about-stat">
+              <h3 class="counter-number" data-target="10000" data-suffix="+">0</h3>
+              <p>Happy Customers</p>
+            </div>
+            <div class="about-stat">
+              <h3 class="counter-number" data-target="25" data-suffix="+">0</h3>
+              <p>Stations</p>
+            </div>
+            <div class="about-stat">
+              <h3 class="counter-number" data-target="99" data-suffix="%">0</h3>
+              <p>Satisfaction</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         11. CUSTOMER REVIEWS (SLIDER / CAROUSEL)
+         ==================================================================== -->
+    <section class="section section-alt" id="reviews">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-badge">Client Testimonials</div>
+          <h2 class="section-title">What Our Drivers <span class="text-gradient">Say About Us</span></h2>
+          <p class="section-subtitle">
+            Real feedback from thousands of satisfied travelers across the country.
+          </p>
+        </div>
+
+        <div class="reviews-slider-container">
+          <div class="reviews-track" id="reviewsTrack">
+            
+            <!-- Slide 1 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <svg class="review-quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <div class="review-stars">
+                  ★★★★★
+                </div>
+                <p class="review-text">
+                  "The CarGo booking experience was flawless. I walked off my flight, unlocked the Porsche 911 via my phone, and drove off in less than two minutes. The car was impeccably clean with only 4,000 miles."
+                </p>
+                <div class="reviewer-profile">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Marcus Sterling" class="reviewer-avatar">
+                  <div>
+                    <h4 class="reviewer-name">Marcus Sterling</h4>
+                    <span class="reviewer-location">San Francisco, CA • Rented Porsche 911</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <svg class="review-quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <div class="review-stars">
+                  ★★★★★
+                </div>
+                <p class="review-text">
+                  "Rented the Tesla Model 3 for a week-long business trip. Transparent pricing with zero surprise charges at pickup. Supercharging support was seamless and customer support answered my questions instantly."
+                </p>
+                <div class="reviewer-profile">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="David Chen" class="reviewer-avatar">
+                  <div>
+                    <h4 class="reviewer-name">David Chen</h4>
+                    <span class="reviewer-location">Austin, TX • Rented Tesla Model 3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <svg class="review-quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <div class="review-stars">
+                  ★★★★★
+                </div>
+                <p class="review-text">
+                  "We took the Toyota Fortuner for a family mountain trip. Lots of luggage room, very fuel efficient, and child seats were pre-installed and sanitized upon arrival. Truly 5-star service!"
+                </p>
+                <div class="reviewer-profile">
+                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova" class="reviewer-avatar">
+                  <div>
+                    <h4 class="reviewer-name">Elena Rostova</h4>
+                    <span class="reviewer-location">Denver, CO • Rented Toyota Fortuner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="review-slide">
+              <div class="review-card">
+                <svg class="review-quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <div class="review-stars">
+                  ★★★★★
+                </div>
+                <p class="review-text">
+                  "The BMW 5 Series was in pristine showroom condition. The rental calculator showed the exact dollar amount I paid. No gimmicks, no waiting in lines. I'll never rent cars any other way."
+                </p>
+                <div class="reviewer-profile">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Michael Vance" class="reviewer-avatar">
+                  <div>
+                    <h4 class="reviewer-name">Michael Vance</h4>
+                    <span class="reviewer-location">Miami, FL • Rented BMW 5 Series</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="slider-controls">
+            <button type="button" class="slider-arrow-btn" id="prevReviewBtn" aria-label="Previous Testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button type="button" class="slider-arrow-btn" id="nextReviewBtn" aria-label="Next Testimonial">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         12. FAQ ACCORDION
+         ==================================================================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <div class="section-badge">Help & Support</div>
+          <h2 class="section-title">Frequently Asked <span class="text-gradient">Questions</span></h2>
+          <p class="section-subtitle">
+            Clear answers to help you navigate driver requirements, policies, and reservations.
+          </p>
+        </div>
+
+        <div class="faq-accordion">
+          
+          <div class="faq-item active">
+            <button type="button" class="faq-question">
+              <span>What documents do I need to rent a car with CarGo?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              To rent a vehicle, you need a valid government-issued driver's license (held for at least 1 year), to be at least 21 years of age, and a valid payment card in the driver's name. International renters are welcome with a valid foreign driver's license and passport.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Can I cancel or modify my booking for free?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Yes! All CarGo reservations include 100% Free Cancellation with a full instant refund if cancelled up to 24 hours prior to your scheduled pickup time. Modifications can also be made free of charge.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Is insurance included in the daily rental rate?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Standard state-mandated third-party liability coverage is included with every rental. For total peace of mind, you can add our Comprehensive Zero-Deductible protection plan for $20/day, which covers collision, tire, glass, and scratch damage with $0 customer liability.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Can I choose a different drop-off location?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Yes, one-way rentals are supported across all our major hubs (Airport Terminals, Downtown Metro, Financial District, and Resort Marina). Simply choose your desired drop-off hub when searching or booking.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Is there a minimum rental duration?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              The minimum rental period is 24 hours (1 day). We also offer discounted extended rates for weekly and monthly rentals.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>Are there mileage restrictions on the vehicles?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              Standard Economy, Sedans, and SUVs include Unlimited Mileage throughout the country. Exotic high-performance sports cars (such as the Porsche 911) include a generous allowance of 200 miles per day, with additional miles available at a fair flat rate.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         13. CONTACT SECTION
+         ==================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-grid">
+        
+        <!-- Contact Information Column -->
+        <div class="contact-info-card">
+          <div>
+            <div class="section-badge">Get In Touch</div>
+            <h2 class="section-title">Contact <span class="text-gradient">CarGo</span></h2>
+            <p style="color: var(--text-secondary); font-size: 0.9375rem; margin-top: 8px;">
+              Have a special fleet request, corporate inquiry, or roadside question? Reach out to our 24/7 concierge team.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Phone Support</h4>
+                  <p>+1 (800) 555-CARGO (2274)</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Email Concierge</h4>
+                  <p>support@cargomobility.com</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Business Hours</h4>
+                  <p>24 Hours / 7 Days a Week (Fleet Hubs)</p>
+                </div>
+              </div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Headquarters</h4>
+                  <p>500 Silicon Vista Boulevard, Suite 400</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--border-color); font-size: 0.8125rem; color: var(--text-muted);">
+            ⚡ Guaranteed reply within 15 minutes during operating travel hours.
+          </div>
+        </div>
+
+        <!-- Validated Contact Form Column -->
+        <div class="contact-form-card">
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--text-main); margin-bottom: 20px;">Send Us a Message</h3>
+
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contactName">Full Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Alex Morgan" required>
+              <span class="field-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" class="form-control" placeholder="alex@example.com" required>
+              <span class="field-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactPhone">Phone Number</label>
+              <input type="tel" id="contactPhone" class="form-control" placeholder="+1 (555) 019-2834">
+            </div>
+
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <select id="contactSubject" class="form-control">
+                <option value="General Inquiry">General Fleet Inquiry</option>
+                <option value="Reservation Question">Reservation Question</option>
+                <option value="Corporate Account">Corporate Accounts</option>
+                <option value="Roadside Support">Roadside Support</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="contactMessage">Message *</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Tell us how we can assist your travel plans..." required></textarea>
+              <span class="field-error"></span>
+            </div>
+
+            <div class="full-width">
+              <button type="submit" class="btn btn-primary btn-lg">
+                Send Message
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       14. FOOTER
+       ====================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        <!-- Brand & Description -->
+        <div class="footer-brand">
+          <a href="#home" class="logo" style="color: #ffffff;">
+            <div class="logo-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+                <circle cx="7" cy="17" r="2"></circle>
+                <path d="M9 17h6"></path>
+                <circle cx="17" cy="17" r="2"></circle>
+              </svg>
+            </div>
+            <span>Car</span>Go
+          </a>
+          <p>
+            Premium on-demand car rentals with contactless mobile unlock, zero counter lines, and transparent guaranteed pricing.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cars">Popular Fleet</a></li>
+            <li><a href="#calculator">Price Calculator</a></li>
+            <li><a href="#services">Why Choose CarGo</a></li>
+            <li><a href="#about">Company Story</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Vehicle Classes -->
+        <div class="footer-col">
+          <h4>Vehicle Classes</h4>
+          <ul class="footer-links">
+            <li><a href="#cars" onclick="resetCarFilters()">Economy Commuters</a></li>
+            <li><a href="#cars">Executive Sedans</a></li>
+            <li><a href="#cars">Family SUVs & 4x4</a></li>
+            <li><a href="#cars">Luxury Vehicles</a></li>
+            <li><a href="#cars">Sports Supercars</a></li>
+            <li><a href="#cars">100% Electric (EV)</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <p style="font-size: 0.875rem; margin-bottom: 14px; color: #94a3b8;">
+            Get seasonal travel deals and exclusive weekend discount vouchers.
+          </p>
+          <form id="newsletterForm" style="display: flex; gap: 8px;">
+            <input type="email" placeholder="Your email..." required style="padding: 10px 14px; background: #0f172a; border: 1px solid #1e293b; border-radius: var(--radius-sm); color: #fff; font-size: 0.8125rem; flex: 1;">
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> CarGo Mobility Inc. All rights reserved. Built for GitHub Portfolio.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Rental Agreement</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       MODAL 1: CAR DETAILS MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="carDetailsModal" role="dialog" aria-modal="true" aria-labelledby="carDetailsTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="carDetailsTitle">Vehicle Specification</h3>
+        <button type="button" class="modal-close-btn" onclick="closeModal('carDetailsModal')" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="carDetailsModalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL 2: BOOKING REQUEST MODAL
+       ====================================================================== -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="bookingModalTitle">Complete Your Reservation</h3>
+        <button type="button" class="modal-close-btn" onclick="closeModal('bookingModal')" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- Form View -->
+        <div id="bookingFormView">
+          <form id="bookingForm" novalidate>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px;">
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="bookingCarSelect">Selected Vehicle *</label>
+                <select id="bookingCarSelect" class="form-control" required></select>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingPickupLoc">Pick-up Station</label>
+                <select id="bookingPickupLoc" class="form-control">
+                  <option value="Airport International Terminal (LAX/JFK)">Airport Hub Terminal</option>
+                  <option value="Downtown Metro Center">Downtown Metro Center</option>
+                  <option value="Financial & Luxury District">Financial District</option>
+                  <option value="Beachfront Marina Station">Beachfront Marina</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingReturnLoc">Drop-off Station</label>
+                <select id="bookingReturnLoc" class="form-control">
+                  <option value="Same as Pick-up">Same as Pick-up</option>
+                  <option value="Airport International Terminal (LAX/JFK)">Airport Hub Terminal</option>
+                  <option value="Downtown Metro Center">Downtown Metro Center</option>
+                  <option value="Financial & Luxury District">Financial District</option>
+                  <option value="Beachfront Marina Station">Beachfront Marina</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingPickupDate">Pick-up Date *</label>
+                <input type="date" id="bookingPickupDate" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingReturnDate">Return Date *</label>
+                <input type="date" id="bookingReturnDate" class="form-control" required>
+              </div>
+            </div>
+
+            <!-- Optional Add-ons -->
+            <div style="margin-bottom: 18px; padding: 12px; background: var(--bg-alt); border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <span style="font-size: 0.8125rem; font-weight: 700; color: var(--text-main); display: block; margin-bottom: 8px;">Optional Protection & Accessories:</span>
+              <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 0.8125rem; cursor: pointer;">
+                  <input type="checkbox" id="bookingInsuranceCheck" checked> Zero-Deductible Insurance ($20/day)
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 0.8125rem; cursor: pointer;">
+                  <input type="checkbox" id="bookingGpsCheck"> GPS ($8/day)
+                </label>
+                <label style="display: flex; align-items: center; gap: 6px; font-size: 0.8125rem; cursor: pointer;">
+                  <input type="checkbox" id="bookingChildSeatCheck"> Child Seat ($10/day)
+                </label>
+              </div>
+            </div>
+
+            <!-- Driver Information -->
+            <div style="font-size: 0.875rem; font-weight: 700; color: var(--text-main); margin-bottom: 12px; border-bottom: 1px solid var(--border-color); padding-bottom: 6px;">
+              Primary Driver Information
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+              <div class="form-group">
+                <label for="bookingDriverName">Full Name *</label>
+                <input type="text" id="bookingDriverName" class="form-control" placeholder="Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingDriverEmail">Email Address *</label>
+                <input type="email" id="bookingDriverEmail" class="form-control" placeholder="alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingDriverPhone">Phone Number *</label>
+                <input type="tel" id="bookingDriverPhone" class="form-control" placeholder="+1 (555) 234-5678" required>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingDriverLicense">Driver's License # *</label>
+                <input type="text" id="bookingDriverLicense" class="form-control" placeholder="DL-894012" required>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 12px;">
+              <button type="button" class="btn btn-secondary" onclick="closeModal('bookingModal')">Cancel</button>
+              <button type="submit" class="btn btn-primary" id="confirmBookingBtn">Confirm Reservation</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Confirmed Voucher View (Injected via JavaScript upon submit) -->
+        <div id="bookingConfirmedView" style="display: none;"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Back to Top Button -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+</body>
+</html>
